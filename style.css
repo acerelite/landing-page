@@ -1,0 +1,67 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 72px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+
+}
+
+
+.body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.author {
+    align-self: flex-end;
+}
+
+.footer {
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid black;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+    display: flex;
+}
+
