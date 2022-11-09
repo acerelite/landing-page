@@ -5,8 +5,12 @@
 body {
     min-height: 100vh;
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
+}
+.header, .banner, .footer {
+    background-color: #1f2937;
 }
 
 .header {
@@ -26,24 +30,22 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
-.left-banner, .right-banner {
+.banner > * {
     flex: 0 0 400px;
-    padding: 65px 32px 90px 32px;
+    padding: 80px 22px;
+    /* padding: 65px 32px 90px 32px; */
 }
 
-.right-banner img {
+.banner > .bannerimg {
     height: auto;
-    width: 400px;
+    width: 500px;
 }
 
-.header, .banner, .footer {
-    background-color: #1f2937;
-}
 
-h1 {
-    padding: 0;
+.banner h1 {
     margin: 0;
     font-size: 48px;
     font-weight: bolder;
@@ -51,8 +53,8 @@ h1 {
     
 }
 
-.banner-desc {
-    padding: 0 0 8px 0;
+.banner p {
+    padding-bottom: 8px;
     margin: 0;
     font-size: 18px;
     color: #e5e7eb;
@@ -63,23 +65,23 @@ h1 {
 }
 
 
-h2 {
+.info h2 {
     padding: 16px 12px;
 
 }
 
-.deck {
+.info > .deck {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.card {
+.deck > * {
     flex-basis: 150px;;
     margin: 0px 24px 50px 24px;
 }
 
-.card img {
+.deck img {
     border-radius: 16px;
     height: 150px;
 }
@@ -93,7 +95,7 @@ h2 {
     width: 100%;
 }
 
-.quote {
+.testimony .quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,8 +103,23 @@ h2 {
     max-width: 800px;
 }
 
-.author {
+.testimony .author {
     align-self: flex-end;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: rgb(0, 170, 255);
+    color: white;
+    border-radius: 10px;
+}
+
+.sign div {
+    margin: 10px 32px;
 }
 
 .footer {
@@ -113,12 +130,12 @@ h2 {
     color: white;
 }
 
+
 ul {
+    display: flex;
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-
-    display: flex;
 }
 
 
